@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes Search
+{% endblock %}
+
+{% block main %}
+<h1>Get Stock Quotes</h1>
+<hr class="line">
+<div class="container">
+    <div class="row">
+            <div class="regcard center-card">
+                <div class="card-body">
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input type="text" name="symbol" placeholder="Stock symbol" required>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="input-button">Get Quote</button>        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,184 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: white;
+}
+nav .navbar-brand .red
+{
+    color: white;
+}
+nav .navbar-brand .yellow
+{
+    color: white;
+}
+nav .navbar-brand .green
+{
+    color: white;
+}
+
+
+/* navbar */
+.bg-light.border.navbar.navbar-expand-md.navbar-light{
+    background-color: #00416a  !important;
+}
+
+/* body container */
+.container-fluid.text-center {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: transparent;
+    align: center;
+
+}
+
+body{
+    background-image: url('navy2U.png');
+    background-size: cover;
+    height: 800px;
+    image-align: center;
+    background-position: center;
+}
+
+footer.mb-5{
+    background-color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+.container.py-5.text-center{
+    background-color: transparent;
+
+}
+
+
+/* forms */
+.form-group {
+    padding: 20px;
+}
+
+form{
+    padding: 30px;
+}
+
+.input-button{
+
+    padding: 3px 15px; /* Add padding around the text */
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: white;
+    background-color: #00416a ;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button{
+    padding: 3px 15px; /* Add padding around the text */
+    background-color: #00416a ;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a.button {
+    padding: 3px 15px; /* Add padding around the text */
+    background-color: #00416a ;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+/* Button style on hover */
+button:hover {
+    background-color: #21abcd; /* New button color on hover */
+}
+
+a.button:hover {
+    background-color: #21abcd; /* New button color on hover */
+}
+
+.input-button:hover {
+    background-color: #21abcd; /* New button color on hover */
+}
+
+input{
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid grey;
+}
+
+.sellform-group{
+    padding: 10px;
+}
+
+.white-line {
+    border-top: 1px solid white; /* Set the color and style of the border */
+}
+
+
+/* history page*/
+.col{
+
+    color: white;
+    background-color: #00416a ;
+    padding: 6px;
+}
+
+.col2{
+    background-color: #fff;
+    padding: 10px;
+}
+
+.hystorycontainer.text-center{
+    align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* history cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    height: 160px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 16px 16px 32px 16px rgba(0, 0, 0, 0.1);
+  }
+
+.center-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    height: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 16px 16px 32px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hiscard.center-card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 16px 16px 32px 16px rgba(0, 0, 0, 0.1);
+}

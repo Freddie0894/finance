@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quotes Search
+{% endblock %}
+
+{% block main %}
+        <h1>{{ symbol["symbol"] }}</h1>
+        <hr class="line">
+
+        <div class="container">
+            <div class="row">
+                    <div class="hiscard center-card">
+                        <div class="card-body">
+
+        <h5>Price: {{ usdSymbol }}</h5>
+        <hr class="white-line">
+        <a href="/buy"><button>Buy</button></a>
+    </div>
+</div>
+</div>
+    {% endblock %}

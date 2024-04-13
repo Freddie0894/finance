@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Bought
+{% endblock %}
+
+{% block main %}
+        <h1>Purchase Confirmed</h1>
+        <hr>
+        <div class="container">
+            <div class="row">
+                    <div class="regcard center-card">
+                        <div class="card-body">
+        <h1>{{ symbol["symbol"] }}</h1>
+        <p>Shares Bought: {{ formatted_shares }}</p>
+        <p>Total Shares Owned: {{ shares_value }}</p>
+        <p>Total Price: {{ usdPrice }}</p>
+        <p>Current Balance: {{ remaining_credit }}</p>
+
+
+        <!--MANCA IL TOTALE + IL TOTALE DEGLI ASSETS-->
+        <!--quando compro devo vedere il totale degli shares di quel simbolo ma il prezzo corrente del buy e il totale di tutti gli shares-->
+        <hr class="white-line">
+
+        <a href="/"><button>Dashboard</button></a>
+    </div>
+</div>
+</div>
+</div>
+        <script>
+            setTimeout(function(){
+                window.location.href = '/';
+            }, 10000);
+        </script>
+
+        {% endblock %}

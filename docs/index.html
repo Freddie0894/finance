@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quotes Search
+{% endblock %}
+
+{% block main %}
+<h1>Dashboard</h1>
+<hr class="line">
+{% if balance %}
+<p>Total of Your Assets: None</p>
+<p>Remaining Balance: {{ balance }}</p>
+<h3>Your Stocks: </h3>
+<p>None</p>
+{% else %}
+<p>Total of Your Assets: {{ price }}</p>
+<p>Remaining Balance: {{ portfolio }}</p>
+
+<h1>Your Stocks</h1>
+
+<div class="container">
+    <div class="row">
+        {% for i in range(allStocks|length) %}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ allStocks[i]["symbol"] }} (Current Price: {{ currentPrices[i] }})</h5>
+
+                    <p class="card-text">All {{ allStocks[i]["symbol"] }} shares: {{ onePrice[i]['price'] }} ({{ stocks[i]['shares'] }} shares owned)</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+
+
+        <form action="/buy" method="post">
+            <div class="mb-3">
+                <input type="text" name="symbol" placeholder="Stock Symbol" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" name="shares" placeholder="Number of Shares" required>
+            </div>
+            <div class="mb-3">
+                <input class="input-button" type="submit" value="Buy">
+            </div>
+        </form>
+
+        <form action="/quote" method="post">
+            <div class="mb-3">
+                <input type="text" name="symbol" placeholder="Stock symbol" required>
+            </div>
+            <div class="mb-3">
+                <input class="input-button" type="submit" value="Get Quote">
+            </div>
+        </form>
+        <a href="sell" class="button">Sell</a>
+    {% endblock %}
+

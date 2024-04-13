@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+History
+{% endblock %}
+    {% block main %}
+
+    <h1>Transactions History</h1>
+    <hr>
+    <div class="container">
+      <div class="row">
+              <div class="hiscard center-card">
+                  <div class="card-body">
+
+                    <div class="hystorycontainer text-center">
+                      <div class="row row-cols-5">
+                        <div class="col">Symbol:</div>
+                        <div class="col">Shares:</div>
+                        <div class="col">Price:</div>
+                        <div class="col">Operation:</div>
+                        <div class="col">Time:</div>
+                      </div>
+                    </div>
+
+        {% for transaction in history %}
+              <div class="hystorycontainer text-center">
+                <div class="row row-cols-5">
+                  <div class="col2">{{ transaction['symbol'] }}</div>
+                  <div class="col2">{{ transaction['shares'] }}</div>
+                  <div class="col2">{{ transaction['price'] }}</div>
+                  <div class="col2">{{ transaction['transaction_type'] }}</div>
+                  <div class="col2">{{ transaction['time'] }}</div>
+                </div>
+              </div>
+        {% endfor %}
+        <a href="/"><button>Dashboard</button></a>
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock %}
+
+

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Sold
+{% endblock %}
+
+{% block main %}
+        <h1>Selling Confirmed</h1>
+        <hr class="line">
+        <div class="container">
+            <div class="row">
+                    <div class="regcard center-card">
+                        <div class="card-body">
+        <h1>{{ symbol["symbol"] }}</h1>
+        <p>Shares Sold: {{ shares_sold }}</p>
+        <p>Total Price: {{ total_price }}</p>
+        <p>Current Balance: {{ remaining_credit }}</p>
+        <hr class="white-line">
+        <a href="/"><button>Dashboard</button></a>
+    </div>
+</div>
+</div>
+    {% endblock %}
